@@ -25,23 +25,23 @@ public class RetrofitServiceManager {
         builder.readTimeout(DEFAULT_READ_TIME_OUT, TimeUnit.SECONDS);//读操作超时时间
 
         // 添加公共参数拦截器
-        HttpCommonInterceptor commonInterceptor = new HttpCommonInterceptor.Builder()
-                //当前版本号，获取当前版本
-                .addHeaderParams("version","123")
-                //当前设备
-                .addHeaderParams("device", "android")
-                //时间戳+随机数
-                .addHeaderParams("timestamp", "45454545")
-                //包名,获取包名
-                .addHeaderParams("identifier", "124545")
-                //用户id
-                .addHeaderParams("customerUID","1231")
-                //用户token
-                .addHeaderParams("token","")
-                //商户ID
-                .addHeaderParams("merid","1231")
-                .build();
-        builder.addInterceptor(commonInterceptor);
+//        HttpCommonInterceptor commonInterceptor = new HttpCommonInterceptor.Builder()
+//                //当前版本号，获取当前版本
+//                .addHeaderParams("version","123")
+//                //当前设备
+//                .addHeaderParams("device", "android")
+//                //时间戳+随机数
+//                .addHeaderParams("timestamp", "45454545")
+//                //包名,获取包名
+//                .addHeaderParams("identifier", "124545")
+//                //用户id
+//                .addHeaderParams("customerUID","1231")
+//                //用户token
+//                .addHeaderParams("token","")
+//                //商户ID
+//                .addHeaderParams("merid","1231")
+//                .build();
+//        builder.addInterceptor(commonInterceptor);
 
         // 创建Retrofit
         mRetrofit = new Retrofit.Builder()

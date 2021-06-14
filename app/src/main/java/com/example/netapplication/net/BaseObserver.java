@@ -16,6 +16,7 @@ import retrofit2.HttpException;
 /**
  * Created by Administrator on 2021/6/2
  * Describe ：
+ * https://blog.csdn.net/fugang1230/article/details/81207202?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control
  */
 
 public class BaseObserver<T> implements Observer<BaseResult<T>> {

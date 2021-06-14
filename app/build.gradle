@@ -53,4 +53,7 @@ dependencies {
 
     //design
     implementation 'com.android.support:design:29.0.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    implementation 'com.orhanobut:logger:1.15'
 }
